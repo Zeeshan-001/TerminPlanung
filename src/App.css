@@ -20,6 +20,8 @@
 
   --color-arbeit: #f97316;
   --bg-arbeit: #fff7ed;
+
+  --radious-sm: 3px;
 }
 
 * {
@@ -129,7 +131,7 @@ aside {
   cursor: pointer;
   font-size: 1rem;
   padding: 0.2rem 0.4rem;
-  border-radius: 4px;
+  border-radius: var(----radious-sm);
   transition: color 0.2s;
 }
 .nav-btn:hover {
@@ -565,8 +567,8 @@ main {
 .modal {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 2rem;
+  border-radius: 5px;
+  padding: 1.2rem 1.4rem;
   width: 440px;
   max-width: 95vw;
   animation: modalIn 0.25s ease;
@@ -607,8 +609,8 @@ main {
   flex-direction: column;
 }
 .form-label {
-  font-size: 0.65rem;
-  color: var(--muted);
+  font-size: 0.7rem;
+  color: var(--text);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   display: block;
@@ -622,7 +624,7 @@ main {
   border: 1px solid var(--border);
   color: var(--text);
   padding: 0.6rem 0.9rem;
-  border-radius: 8px;
+  border-radius: var(--radious-sm);
   font-family: "DM Mono", monospace;
   font-size: 0.82rem;
   transition: border-color 0.2s;
@@ -653,8 +655,8 @@ main {
 }
 .cat-btn {
   flex: 1;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(----radious-sm);
   border: 1px solid var(--border);
   background: var(--card);
   color: var(--muted);
@@ -694,9 +696,9 @@ main {
 .btn-ghost {
   background: none;
   border: 1px solid var(--border);
-  color: var(--muted);
+  color: var(--text);
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: var(--radious-sm);
   font-family: "DM Mono", monospace;
   font-size: 0.78rem;
   cursor: pointer;
@@ -711,7 +713,7 @@ main {
   border: none;
   color: #0e0e10;
   padding: 0.5rem 1.2rem;
-  border-radius: 8px;
+  border-radius: var(--radious-sm);
   font-family: "DM Mono", monospace;
   font-size: 0.78rem;
   font-weight: 500;
@@ -722,6 +724,8 @@ main {
   background: #e0c085;
 }
 .btn-danger {
+  /* display: none; */
+  margin-right: auto;
   background: var(--danger);
   color: #fff;
 }

@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
 import "./App.css";
-import AppointmentForm from "@features/appointments/components/AppointmentForm";
+import AppointmentForm from "@features/appointments/components/appointmentsForm/AppointmentForm";
 
 function App() {
   return (
