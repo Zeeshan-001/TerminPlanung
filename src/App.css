@@ -1,4 +1,6 @@
-root {
+@import "tailwindcss";
+
+:root {
   --bg: #0e0e10;
   --surface: #16161a;
   --card: #1c1c22;
@@ -10,6 +12,14 @@ root {
   --danger: #e06c75;
   --success: #98c379;
   --today: rgba(200, 169, 110, 0.12);
+
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --transition: all 0.2s ease;
+  --radius: 8px;
+
+  --color-arbeit: #f97316;
+  --bg-arbeit: #fff7ed;
 }
 
 * {
@@ -19,13 +29,16 @@ root {
 }
 
 body {
-  font-family: "DM Mono", monospace;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 64px 1fr;
+  /* grid-template-columns: 300px 1fr;
+  grid-template-rows: 64px 1fr; */
 }
 
 /* Header */
@@ -589,6 +602,9 @@ main {
 
 .form-group {
   margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
 }
 .form-label {
   font-size: 0.65rem;
@@ -637,7 +653,7 @@ main {
 }
 .cat-btn {
   flex: 1;
-  padding: 0.4rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--card);
@@ -758,4 +774,184 @@ main {
   position: absolute;
   left: -4px;
   top: -3.5px;
+}
+
+/* =========================
+   FLEX CONTAINER
+========================= */
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+
+/* =========================
+   FLEX DIRECTION
+========================= */
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+/* =========================
+   FLEX WRAP
+========================= */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* =========================
+   JUSTIFY CONTENT (Main Axis)
+========================= */
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* =========================
+   ALIGN ITEMS (Cross Axis)
+========================= */
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-stretch {
+  align-items: stretch;
+}
+.items-baseline {
+  align-items: baseline;
+}
+
+/* =========================
+   ALIGN CONTENT (Multi-line)
+========================= */
+.content-start {
+  align-content: flex-start;
+}
+.content-center {
+  align-content: center;
+}
+.content-end {
+  align-content: flex-end;
+}
+.content-between {
+  align-content: space-between;
+}
+.content-around {
+  align-content: space-around;
+}
+.content-stretch {
+  align-content: stretch;
+}
+
+/* =========================
+   FLEX GROW / SHRINK
+========================= */
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-auto {
+  flex: 1 1 auto;
+}
+.flex-initial {
+  flex: 0 1 auto;
+}
+.flex-none {
+  flex: none;
+}
+
+.grow {
+  flex-grow: 1;
+}
+.grow-0 {
+  flex-grow: 0;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+/* =========================
+   ALIGN SELF
+========================= */
+.self-auto {
+  align-self: auto;
+}
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-stretch {
+  align-self: stretch;
+}
+.self-baseline {
+  align-self: baseline;
+}
+
+/* =========================
+   GAP
+========================= */
+.gap-0 {
+  gap: 0;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.gap-4 {
+  gap: 1.5rem;
+}
+
+.row-gap-1 {
+  row-gap: 0.25rem;
+}
+.col-gap-1 {
+  column-gap: 0.25rem;
 }
