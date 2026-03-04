@@ -14,7 +14,7 @@ const AppointmentForm = (): JSX.Element => {
     <div className="modal">
       <h2 className="modal-title">Termin hinzufügen</h2>
       {/****** Title *****/}
-      <Input type="text" label="Time" id="eventTitle" placeholder="Arttermin, Meeting..." autoFocus />
+      <Input type="text" label="Title" id="eventTitle" placeholder="Arttermin, Meeting..." autoFocus />
 
       {/****** Categories *****/}
       <CategorySelector onSelect={handleCategorieSelect} selectedID={categorie} />
@@ -27,7 +27,7 @@ const AppointmentForm = (): JSX.Element => {
 
       {/****** Period and Place *****/}
       <div className="form-row">
-        <Input type="number" placeholder="30 min" label="Dauer" />
+        <Input type="number" placeholder="30 min" label="Dauer (Min.)" />
         <Input type="text" placeholder="Raum, Adresse..." label="Ort" />
       </div>
 
