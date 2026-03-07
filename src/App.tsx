@@ -4,7 +4,7 @@ import AppointmentForm from "@features/appointments/components/appointmentsForm/
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-row">
       <AppointmentForm />
       <AppointmentsList />
     </div>

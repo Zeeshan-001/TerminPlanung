@@ -1,10 +1,11 @@
 import type { JSX } from "react";
 import Button from "src/shared/ui/utils/Button";
 import { CATEGORIES } from "@features/appointments/modal/categories";
+import type { AppointmentType } from "@features/appointments/modal/appointments";
 
 interface CategorySelectorProps {
   selectedID: string;
-  onSelect: (id: string) => void;
+  onSelect: (id: AppointmentType["category"]) => void;
 }
 
 const CategorySelector = ({ onSelect, selectedID }: CategorySelectorProps): JSX.Element => {

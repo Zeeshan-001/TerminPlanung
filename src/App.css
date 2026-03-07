@@ -740,6 +740,10 @@ main {
   background: #f07c85;
 }
 
+.btn-reset {
+  margin-right: auto;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
