@@ -62,12 +62,14 @@ header {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   color: var(--accent);
-  letter-spacing: 0.05em;
+  padding: 1rem 0;
+  letter-spacing: 0.1em;
 }
 
 .logo span {
   color: var(--muted);
   font-size: 0.9rem;
+  margin-left: 0.2rem;
 }
 
 .header-actions {
@@ -80,10 +82,10 @@ header {
   background: var(--card);
   border: 1px solid var(--border);
   color: var(--text);
-  padding: 0.35rem 0.9rem;
-  border-radius: 100px;
+  padding: 0.4rem 1.4rem;
+  border-radius: 3px;
   font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -272,10 +274,10 @@ main {
   background: var(--accent);
   border: none;
   color: #0e0e10;
-  padding: 0.5rem 1.2rem;
-  border-radius: 100px;
+  padding: 0.6rem 1.4rem;
+  border-radius: 3px;
   font-family: "DM Mono", monospace;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;

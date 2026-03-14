@@ -3,21 +3,21 @@ import Button from "src/shared/ui/utils/Button";
 
 interface FormactionProps {
   onReset: () => void;
-  onSubmit: () => void;
+  onClose: () => void;
 }
 
-const FormActions = ({ onReset, onSubmit }: FormactionProps): JSX.Element => {
+const FormActions = ({ onReset, onClose }: FormactionProps): JSX.Element => {
   return (
     <div className="modal-actions">
       <Button klasses="btn-ghost btn-danger" onClick={onReset}>
-        Löschen
+        Reset
       </Button>
 
-      <Button klasses="btn-primary" onClick={onSubmit}>
+      <Button klasses="btn-primary" type="submit">
         Speichern
       </Button>
 
-      <Button klasses="btn-ghost" onClick={onReset}>
+      <Button klasses="btn-ghost" onClick={onClose}>
         Abbrechnen
       </Button>
     </div>
